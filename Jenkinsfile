@@ -7,7 +7,7 @@ pipeline {
         IMAGE_NAME     = "${APP_NAME}-image"
         IMAGE_TAG      = "${BUILD_NUMBER}${BUILD_NUMBER}"
         APP_PORT       = "8100"
-        NODE_PORT      = "30081"
+        NODE_PORT      = "30082"
         REPLICA_COUNT  = "2"
     }
 
