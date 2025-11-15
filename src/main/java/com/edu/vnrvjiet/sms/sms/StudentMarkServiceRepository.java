@@ -38,15 +38,15 @@ public class StudentMarkServiceRepository {
         return student;
     }
 
-    public  Student update(Student student){
+    public Student update(Student student){
         Student existingStudent = null;
+
         if(student != null && idAndStudentHashMap.containsKey(student.getId())){
             existingStudent = idAndStudentHashMap.get(student.getId());
             existingStudent.setName(student.getName());
-            existingStudent.setMaths(student.getMaths());
-            existingStudent.setPhysics(student.getPhysics());
-            existingStudent.setChemistry(student.getChemistry());
+            existingStudent.setTotalmarks(student.getTotalmarks());
         }
-        return  existingStudent;
+        return existingStudent;
     }
+
 }

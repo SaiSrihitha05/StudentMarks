@@ -10,7 +10,5 @@ import lombok.Setter;
 public class Student {
     private Integer id;
     private String name;
-    private Integer maths;
-    private Integer physics;
-    private Integer chemistry;
+    private Integer totalmarks;
 }
